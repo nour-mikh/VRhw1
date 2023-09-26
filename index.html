@@ -8,12 +8,16 @@
   <a-scene>
     <!-- Create a plane for the board -->
     <a-sky src="pano.jpg"></a-sky>
+    <a-camera position="0 5 10" look-controls wasd-controls></a-camera>
     <a-assets>
       <a-asset-item id="king" src="3dmodels/scene.gltf"></a-asset-item>
+      <a-asset-item id="queen" src="3dmodels/whiteQueen.glb"></a-asset-item>
+      <a-asset-item id="blackRook" src="3dmodels/blackRook.glb"></a-asset-item>
+      <a-asset-item id="whitePawn" src="3dmodels/whitePawn.glb"></a-asset-item>
+      <a-asset-item id="whiteKing" src="3dmodels/whiteKing.glb"></a-asset-item>
+
       <a-asset-item id="tilesnm" src ="3dmodels/textures/tilesNormalMap.png"></a-asset-item>
     </a-assets>
-
-    <a-camera position="0 10 0" look-controls wasd-controls></a-camera>
 
     <a-plane
     position="0 -5.5 0"
@@ -29,6 +33,10 @@
 
 
     <a-entity gltf-model="#king" position="0 -3.5 0" scale="0.5 0.5 0.5"></a-entity>
+    <a-entity gltf-model="#queen" position="2.05709 -4.53101 1.96167" scale="0.25 0.25 0.25"></a-entity>
+    <a-entity gltf-model="#blackRook" position="-2.94832 -4.0714 0.98095" scale="0.005 0.005 0.005" ></a-entity> 
+    <a-entity gltf-model="#whitePawn" position="-2.08096 -3.49281 -2.05208" scale="0.2 0.2 0.2"></a-entity>
+
     <a-video
         src="video.mp4"
         position="0 4 -5"

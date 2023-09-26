@@ -1,91 +1,47 @@
-# A-Frame Boilerplate
+# Checkers Board A-Frame Project
 
-Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io).
+This is an A-Frame-based virtual Checkers board project with 3D models, textures, and interactive elements. You can use this project as a starting point for creating your own immersive Checkers game.
 
-Alternatively, check out the [A-Frame Starter on
-glitch.com](https://glitch.com/~aframe) for a more interactive way on getting
-started.
+## Project Structure
 
-## Getting Started
+- `index.html`: The main HTML file containing the A-Frame scene setup.
+- `3dmodels/`: Directory containing 3D model assets used in the project.
+  - `3dmodels/scene.gltf`: The 3D model of the king piece.
+  - `3dmodels/textures/`: Directory containing texture assets.
+    - `3dmodels/textures/blackWhite.png`: Texture for the black and white squares on the board.
+    - `3dmodels/textures/whiteMarble.jpg`: Texture for the ground plane.
+    - `3dmodels/textures/tilesNormalMap.png`: Normal map for the ground plane.
+- `pano.jpg`: Panoramic background image for the sky.
 
-There are two easy options for obtaining this A-Frame scene. It's then up to you to make it your own!
+## Features
 
-### <sup>Option 1:</sup> Download the ZIP kit 📦
+- A virtual Checkers board with alternating black and white squares.
+- A 3D model of a king piece that you can interact with.
+- An immersive 360-degree panoramic background.
+- A video player that can play a video.
 
-[<img src="http://i.imgur.com/UVPZoM0.png" width="200">](https://github.com/aframevr/aframe-boilerplate/archive/master.zip)
+## Usage
 
-After you have __[downloaded and extracted this `.zip` file](https://github.com/aframevr/aframe-boilerplate/archive/master.zip)__ containing the contents of this repo, open the resulting directory, and you'll be have your scene ready in these few steps:
+1. Clone or download this repository to your local machine.
 
-    npm install && npm start
-    open http://localhost:3000/
+2. Open `index.html` in a modern web browser that supports A-Frame (e.g., Firefox, Chrome).
 
-<hr>
+3. Explore the virtual Checkers board. You can move around using the WASD keys or by clicking and dragging the mouse.
 
-### <small><sup>Option 2:</sup> Fork this Git repo 🍴🐙
+4. Interact with the 3D king piece and the video player as desired.
 
-Alternatively, you can __[fork this repo](https://github.com/aframevr/aframe-boilerplate/fork)__ to get started, if you'd like to maintain a Git workflow.
+## Customization
 
-After you have __[forked this repo](https://github.com/aframevr/aframe-boilerplate/fork)__, clone a copy of your fork locally and you'll be have your scene ready in these few steps:
+- To customize the textures or 3D models, replace the existing assets in the `3dmodels/textures/` directory and update the `src` attributes in the HTML.
 
-    git clone https://github.com/aframevr/aframe-boilerplate.git
-    cd aframe-boilerplate && rm -rf .git && npm install && npm start
-    open http://localhost:3000/
+- Modify the A-Frame scene and JavaScript code to add more interactivity or features to your project.
 
-> :iphone: **Mobile pro tip:** Upon starting the development server, the URL will be logged to the console. Load that URL from a browser on your mobile device. (If your mobile phone and computer are not on the same LAN, consider using [ngrok](https://ngrok.com/) for local development and testing. [Browsersync](https://www.browsersync.io/) is also worth a gander.)
+## Credits
 
-<hr>
+- This project uses [A-Frame](https://aframe.io/), a popular web framework for building VR and AR experiences.
 
-### <small><sup>Option 3:</sup> Fork this CodePen example 🍴💾✒️
-
-Or, you can simply __[fork this CodePen example](http://codepen.io/team/mozvr/pen/BjygdO?editors=100)__ to dive right in. Enjoy!
-
-
-## Publishing your scene
-
-If you don't already know, GitHub offers free and awesome publishing of static sites through __[GitHub Pages](https://pages.github.com/)__.
-
-To publish your scene to your personal GitHub Pages:
-
-    npm run deploy
-
-And, it'll now be live at __http://`your_username`.github.io/__ :)
-
-<hr>
-
-To know which GitHub repo to deploy to, the `deploy` script first looks at the optional [`repository` key](https://docs.npmjs.com/files/package.json#repository) in the [`package.json` file](package.json) (see [npm docs](https://docs.npmjs.com/files/package.json#repository) for sample usage). If the `repository` key is missing, the script falls back to using the local git repo's remote origin URL (you can run the local command `git remote -v` to see all your remotes; also, you may refer to the [GitHub docs](https://help.github.com/articles/about-remote-repositories/) for more information).
-
-<hr>
-
-## Still need Help?
-
-### Installation
-
-First make sure you have Node installed.
-
-On Mac OS X, it's recommended to use [Homebrew](http://brew.sh/) to install Node + [npm](https://www.npmjs.com):
-
-    brew install node
-
-To install the Node dependencies:
-
-    npm install
-
-
-### Local Development
-
-To serve the site from a simple Node development server:
-
-    npm start
-
-Then launch the site from your favourite browser:
-
-[__http://localhost:3000/__](http://localhost:3000/)
-
-If you wish to serve the site from a different port:
-
-    PORT=8000 npm start
-
+- 3D model and texture credits go to their respective creators.
 
 ## License
 
-This program is free software and is distributed under an [MIT License](LICENSE).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

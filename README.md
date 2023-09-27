@@ -1,47 +1,62 @@
-# Checkers Board A-Frame Project
+# A-Frame Chess Board
 
-This is an A-Frame-based virtual Checkers board project with 3D models, textures, and interactive elements. You can use this project as a starting point for creating your own immersive Checkers game.
+## Table of Contents
 
-## Project Structure
+- [About](#about)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Usage](#usage)
+- [Customization](#customization)
+- [Contributing](#contributing)
+- [License](#license)
 
-- `index.html`: The main HTML file containing the A-Frame scene setup.
-- `3dmodels/`: Directory containing 3D model assets used in the project.
-  - `3dmodels/scene.gltf`: The 3D model of the king piece.
-  - `3dmodels/textures/`: Directory containing texture assets.
-    - `3dmodels/textures/blackWhite.png`: Texture for the black and white squares on the board.
-    - `3dmodels/textures/whiteMarble.jpg`: Texture for the ground plane.
-    - `3dmodels/textures/tilesNormalMap.png`: Normal map for the ground plane.
-- `pano.jpg`: Panoramic background image for the sky.
+## About
 
-## Features
+This A-Frame Chess Board is a simple web-based 3D chessboard created using the A-Frame framework. It includes a textured chessboard, 3D chess pieces, a sky background, and even a video element.
 
-- A virtual Checkers board with alternating black and white squares.
-- A 3D model of a king piece that you can interact with.
-- An immersive 360-degree panoramic background.
-- A video player that can play a video.
+## Prerequisites
 
-## Usage
+Before you get started, make sure you have the following:
 
-1. Clone or download this repository to your local machine.
+- A modern web browser that supports A-Frame (e.g., Chrome, Firefox, or Safari).
+- A code editor for making modifications if needed.
 
-2. Open `index.html` in a modern web browser that supports A-Frame (e.g., Firefox, Chrome).
+## Getting Started
 
-3. Explore the virtual Checkers board. You can move around using the WASD keys or by clicking and dragging the mouse.
+### Installation
 
-4. Interact with the 3D king piece and the video player as desired.
+To use this A-Frame Chess Board, simply open the `index.html` file in your web browser.
+
+### Usage
+
+- Use the mouse and keyboard to interact with the 3D scene:
+  - **Mouse**: Click and drag to rotate the camera.
+  - **W, A, S, D keys**: Move the camera forward, left, backward, and right, respectively.
+
+- Enjoy the 3D chessboard, pieces, and background video!
 
 ## Customization
 
-- To customize the textures or 3D models, replace the existing assets in the `3dmodels/textures/` directory and update the `src` attributes in the HTML.
+You can customize the A-Frame Chess Board in several ways:
 
-- Modify the A-Frame scene and JavaScript code to add more interactivity or features to your project.
+- **Change 3D Models**: Replace the 3D models (GLTF and GLB) in the `3dmodels/` directory with your own models. Update the references in the HTML accordingly.
 
-## Credits
+- **Adjust Camera Position**: Modify the initial camera position by changing the `position` attribute in the `<a-camera>` element.
 
-- This project uses [A-Frame](https://aframe.io/), a popular web framework for building VR and AR experiences.
+- **Texture and Material**: Customize the textures and materials for the chessboard and other elements by changing the `material` attributes in the HTML.
 
-- 3D model and texture credits go to their respective creators.
+- **Background**: Change the sky background by replacing the `src` attribute in the `<a-sky>` element with your preferred image.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/new-feature` or `git checkout -b bug/bug-fix`.
+3. Make your changes and commit them with descriptive commit messages.
+4. Create a pull request to the main repository's `master` branch.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the [MIT License](LICENSE.md).
